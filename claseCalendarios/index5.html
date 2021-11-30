@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <form action=""> <!--esta eqtiqueta es el contenedor donde estara nuestro calendario-->
+        <label for="hora"> <!--para identificar la etiqueta-->
+            <span>hora</span>
+            <input type="time" id="hora" name="hora"> <!--la etiqueta name sirve para poder enviar los datos que sean guardados, quedan registrados-->
+        </label>
+        <label for="dia"> 
+            <span>dia</span>
+            <input type="date" id="dia" name="dia"> <!--etiqueta de tipo date (dia)-->
+        </label>
+        <label for="semana"> 
+            <span>semana</span>
+            <input type="week" id="semana" name="semana"> <!--etiqueta de tipo week (semana)-->
+        </label>
+        <label for="mes"> 
+            <span>mes</span>
+            <input type="month" id="mes" name="mes">  <!--etiqueta de tipo month (mes)-->
+        </label>
+        <input type="submit"> <!--input para insertar un enviar-->
+
+    </form>
+</body>
+</html>
