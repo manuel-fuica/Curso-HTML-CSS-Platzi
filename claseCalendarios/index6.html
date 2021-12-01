@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombre"> <!--lo que esta en azul es la etiqueta y lo que esta en celeste es el atributo, en este caso tiene un atributo-->
+                <span>¿cual es tu nombre?</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required/> <!--el atributo required es para avisar al usuario que debe llenar este campo para seguir avanzando-->
+            </label>        <!--la etiqueta input tiene 4 atributos, el atributo autocomplete nos ayuda a autorellenar el nombre en nuestro navegador, y su valor es de tipo name-->
+            <label for="correo">
+                <span>¿cual es tu correo?</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required/>
+            </label>    <!--en este otro caso el atributo autocomplete es de tipo email, esto ayuda a que el navegador autorellene un email-->
+            <label for="pais">
+                <span>¿en que pais vives?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required/>
+            </label>          <!--aca es de tipo country, y ayuda a rellaner el pais-->
+            <label for="cp">
+                <span>¿cual es tu codigo postal?</span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required/>
+            </label>  <!--en este ultimo caso es de tipo codigo postal-->
+            <input type="submit"> <!--input para insertar un enviar-->
+        </form>
+    </main>
+</body>
+</html>
