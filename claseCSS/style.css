@@ -2,3 +2,14 @@ p {                 /* en esta seccion se le esta dando color azul a la etiqueta
     color: blue;  
     font-size: 30px;
 }
+
+/* class */  /* aqui se llama la clase que creamos en el html, esta se llama con un punto y luego el nombre que le dimos ej: .parrafo*/
+.parrafo {
+    color: red;
+}
+
+/* ID */
+#texto {  /* en este caso es por ID, le dimos el nombre texto al id y se llama anteponiendo el # ej: #texto*/
+    color: yellow;
+    font-size: 24px;
+}
