@@ -1,0 +1,4 @@
+h2 + p { /*aqui se le dice que a la etiqueta p que este cerca de un parrafo, modificale lo que esta dentro de los braquets*/
+    color: red;  /*ojo que es de izquierda a derecha (etiqueta p cercana a h2)*/
+}
+/*esto es el combinador de hermano cercano*/

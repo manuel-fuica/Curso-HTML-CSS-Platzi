@@ -1,0 +1,40 @@
+* {      /* aqui estamos haciendo que nuestro html se ajuste a al tamño de la pantalla, asi no debemos darle scrol*/
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+h1 {  /*aqui esta llamando a la etiqueta h1 para darle estilo*/
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+#page-title { /*aca estamos llamando a al id de nuestra etiqueta h1 y le damos estilo*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title { /*aqui estamos llamando a la clase de nuestro h1 y le damos estilo*/
+    font-size: 18px;
+    font-family: monospace;
+}
+.nav { /*aca llamamos al id de nuestra lista desordenada (ul)*/
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav li{  /*esto es para que nuestra barra de navegacion salga de forma horizontal*/
+    display: inline-block;  /*ojo que se llama el id y se le agrega li para indicarle a que le queremos hacer la modificacion*/
+}
+
+.nav a {  /*todo lo que esta especificado aqui es para la barrita de navegacion ojo que esta con un a para especificar que se refiere a la etiqueta ancla*/
+    color: white;
+    background-color: turquoise;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+/*estilo embebido es darle estilo directamente a la linea en html, y no en un archivo css aparte
+hay que tener ojo con esto porque el css funciona de acuerdo a importancia y esos estilos embebidos son mas importantes*/
+
+.nav .blog {  /*aqui llamamos al id main-nav y le especificamos con los siguientes cambios son solo para el elemento blog, si fuera para por ej cursos ser .cursos*/
+    background-color: red;
+}  /*para hacer esto se debe crear una clase en el html, en este caso le pusimos blog a la clase*/
