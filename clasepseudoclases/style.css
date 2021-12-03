@@ -1,0 +1,43 @@
+.main-nav {  /* aqui llamamos a la clase main_nav ojo que se hace con un punto inicial asi: .main-nav*/
+    margin-top: 10px;  /* aqui se le indica que tam arriba estara el contenedor en nuestro html, en este caso a 10px si lo queremos mas abajo podria ser 100px */
+    list-style: none;  /* con esta linea de codigo hacemos que en nuestra lista desordenada no aparezcan los puntos para enlistarla, esos puntos que aparecen por default*/
+    padding-left: 0; /* cada html tiene una estructura, unos contenedores y ente caso se le dice que este en el padding*/
+    background-color: #13a4a4;  /* aqui se le da un color de fondo al contenedor del navigator menu*/
+}     /* no olvidar que arriba solo le dimos estilo al contenedor, que llamamos como clase main-nav */
+.main-nav__item {   /* aqui esta llamando a la clase hija de main-nav, estamos llamando al main-nav__item*/
+    display: inline-block;  /* con esta opcion hacemos la lista de nuestro item aparezcan de forma horizontal ej: home cursos blog */
+}
+.main-nav__item a {  /* aqui se agrego la a para modificar el contenido que esta en nuestra etiqueta ancla (a)*/
+    color: white;  /* letras de color blanco en nuestra lista*/
+    padding: 5px;   /* tamaño del padding (contenedor en nuestro html)*/
+    border-radius: 2px;  /* esto sirve para crear un borde sobre las palabra (como un efecto de boton dentro del contenedor)*/
+    text-decoration: none;  /*al ser un link la palabra esta subrallada, con esto le quitamos esa ralla y solo aparece la palabra */
+}
+
+.main-nav__item a:hover {  /*aqui se le agrega :hover esto hace algo cuando el mouse esta sobre la palabra*/
+    color: blue;   /* en este caso le dimos un color azul, eso quiere decir que al poner el mouse sobre nuestra palabra en la lista, esta se pondra de color azul*/
+}
+.main-nav__item a:active {  /* esta es una pseudoclase la cual hace que a la palabra en nuestra lista, cuando le demos click se pondra del color que queramos*/
+    color: red;  /* en este caso le dimos un color rojo, por ende al hacer click la palabra se pondra de color rojo*/
+}
+
+.main-nav__item a::after {  /* aqui estamos llamando un pseudoelemnto, para hacer eso, se utiliza ::after */
+    content: " | ";  /* en este caso le dijimos que en el contenido de agregue | , asi las palabra se veran separadas por esa rallita*/
+}           /* ojo que el valor de content esta entrecomillas*/
+
+ /* Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
+  Por ejemplo,  :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.
+  Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento, 
+  sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario),
+   o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).
+   sintaxis: selector:pseudoclase { propiedad: valor; }*/
+
+  /* https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes  (pagina con tips de css y html)
+
+  pseudoelementos: Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que,
+ permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+ sintaxis: selector::pseudo-elemento { propiedad: valor; }
+ 
+ la pseudoclases nos ayudan a definir el estilo de un estado de un elemnto de html, ej: checkeado, al pasar el mouse, etc
+ los pseudoelementos nos ayuda a definir o cambiar un elemento a algo que va a llevar el elemnto en nuestro html ej: | + *, etc*/
+ 

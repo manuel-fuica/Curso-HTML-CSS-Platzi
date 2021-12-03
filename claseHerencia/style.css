@@ -1,0 +1,4 @@
+html {  /* aqui estamos llamando a nuestro archivo completo*/
+    font-size: 75%; /*se le indica el tamaño de la letra, en este caso un 75% del tamaño que viene por defecto*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* esto es el estilo de la letra*/
+}
