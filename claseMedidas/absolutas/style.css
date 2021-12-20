@@ -1,0 +1,8 @@
+main {
+    background-color: red; /* el main es el contenedor en nuestra pagina, en este caso se le dice que sea de color rojo el 100%*/
+    width: 100%; /* este es el ancho, aqui se le dice que ocupe el 100% pero podria ser del tamaño que nosotros queramos, ej: 600px*/
+    height: 500px; /*este es el alto*/
+}              /*ojo que las medidas que ocupamos aqui son pixeles y porcentaje*/
+p {
+    font-size: 16px; /*este es el tamaño de la letra*/
+}

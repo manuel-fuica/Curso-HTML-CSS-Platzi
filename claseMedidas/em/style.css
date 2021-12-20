@@ -1,0 +1,5 @@
+.text-container {   
+    font-size: 1.5em; /*EM es un acronimo de elemento y lo que hace es tomar el tamño de fuente que tenga el padre directo*/
+} /* lo que hace tomar el valor de la etiqueta padre, en este caso sera text-container y por defecto como no le hemos dado
+otro tamaño utiliza lo que el navegador le da, que serian 16px y eso lo multiplica por 1.5 y con ese resultado 
+se obtiene el tamaño de nuestra leta font.size*/
