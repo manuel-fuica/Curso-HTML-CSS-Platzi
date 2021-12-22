@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;    /* recuerda que con esto hacemos que el archivo quede cuadrado en la pantalla y no se genere un scrol*/
+    padding: 0;   /*ademas debemos hacer esto siempre como buena practica para nuestros archivos css*/
+}
+
+html {
+    font-size: 62.5%; /* al darle este tamaño al archivo html, el rem sera de 16 pixeles en caso de que sea 1.6 */
+}
+
+p {
+    font-size: 1.6rem; /*1.6 de rem equivale a 16px, 2 rem equivale a 20px*/
+}

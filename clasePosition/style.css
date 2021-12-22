@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;  /* estas primeras 3 lineas de codigo son de buenas practicas para cuadrar el html en la pantalla*/
+    margin: 0;
+    padding: 0;
+}
+.parent {  /* aqui se esta llamando a la clase parent creada en html, recuerda que las clases se llaman con un . por delante*/
+    border: 2px black dotted;  /*aqui se crea una linea negra con puntitos que ira por el borde de nuestras cajas*/
+    display: inline-block; /*aqui se dividen las cajas creadas, en este caso 4*/
+}
+.box {  /*aqui se llama la clase box y se la dan las propiedades*/
+    display: inline-block;
+    background-color: red; /*color rojo*/
+    width: 100px; /*ancho de 100px*/
+    height: 100px; /*alto de 100px*/
+}
+#two { /*aqui se llama al por el id que le dimos, en este caso two, recuerda que se llaman con un # al principio*/
+    background-color: green; /*se le da un color diferente, en este caso todo el cuadrado sera verde*/
+}
+
+/*por defecto todos los archivos html vienen en la posicion static*/
