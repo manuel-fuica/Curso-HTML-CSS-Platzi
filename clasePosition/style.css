@@ -15,6 +15,8 @@
 }
 #two { /*aqui se llama al por el id que le dimos, en este caso two, recuerda que se llaman con un # al principio*/
     background-color: green; /*se le da un color diferente, en este caso todo el cuadrado sera verde*/
+    position: relative;
+    bottom: 50px;
 }
 
 /*por defecto todos los archivos html vienen en la posicion static*/
