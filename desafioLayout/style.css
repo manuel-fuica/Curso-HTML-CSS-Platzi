@@ -1,0 +1,48 @@
+* { /*apertura de la etiqueta de buenas practicas para encajar bien el html (ajustarlo al tamaño de la pantalla*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .header { /*se llama a la clase header y se le da un color*/
+    background-color: peru;
+  }
+  .header__logo, .nav, .nav__list li { /*se llaman a varias clases y se les define el display y el margin*/
+    display: inline-block;
+    margin: 5px;
+  }
+  .nav {
+    position: absolute; /*a la clase nav se le da una posicion, 0 a la derecha, con esto quedara apegado a la derecha*/
+    right: 0;
+  }
+  .nav__list { /*se le llama a la clase nav list y se le dice que no aplique el stylo de lista que trae por default*/
+    list-style: none;
+  }
+  .nav__list li a {
+    text-decoration: none; /*texto sin decoracion (sin los puntos) y de color blanco*/
+    color: white;
+  }
+  .main { /*se le da el tamaño al main y se le da color verde*/
+    height: 830px; 
+    background-color: seagreen;
+  }
+  .routes { /*se le da estilo donde estan las rutas, se le indica en linea, se le da un tamaño y un color azul*/
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+    background-color: royalblue;
+  }
+  .routes__images img { /*se llama a la clase que esta dentro de las rutas, esto le dara estilo a las imagenes*/
+    display: block; /*con esta etiqueta quedan en bloques hacia abajo (con inline quedan en linea de izquierda a derecha*/
+    margin: 5px 0; /*se le da el tamaño al margin*/
+    border-radius: 10px;
+  }
+  .content {
+    display: inline-block; /*contendio en bloques en linea*/
+    padding: 100px; /*padding con un tamaño de 100px*/
+    position: absolute; /*posicion para el contenido, con esto queda centrado y dentro del main de color verde*/
+  }
+  .footer { /*etiqueta final con un padding de 20px texto centrado alineado y footer de color rojo*/
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+  }

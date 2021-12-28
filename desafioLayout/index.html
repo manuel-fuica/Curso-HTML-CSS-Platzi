@@ -1,0 +1,50 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="./style.css"> <!--etiqueta para llamar al archivo css, donde tenemos nuestros estilos-->
+</head>
+<body>
+  <header class="header"> <!--etiqueta para la cabecera y se le creo una clase para despues darle estilos en nuestro css-->
+    <figure class="header__logo"> <!--etiqueta para poner una imagen dentro-->
+      <img src="./imagenes/logoPlatzi.jpg" alt="Logo" height="50px" width="200px"> <!--etiqueta para insertar la imagen desde nuestra carpeta-->
+    </figure>
+    <nav class="nav"> <!--etiqueta para crear el navegador y se le crea una clase llamada nav para despues utilizarla en css-->
+      <ul class="nav__list"> <!--etiqueta para abrir una lista desordenada de elementos-->
+        <li> <!--etiqueta para crear la lista-->
+          <a href="#">Home</a> <!--etiqueta ancla para que al momento de darle click me llevo a otro lado-->
+        </li>
+        <li>
+          <a href="#">Cursos</a>
+        </li>
+        <li>
+          <a href="#">Instructores</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header> <!--cierre del header, todo lo anterior ira arriba en la cabecera del archivo html-->
+  <main class="main"> <!--etiqueta para la creacion del conntenido fuerte del archivo html, y se le crea la clase main-->
+    <aside class="routes"> <!--etiqueta para crear una seccion dentro del contenido principal, un recuadro-->
+      <figure class="routes__images"> <!--etiqueta para poner dentro las imagenes-->
+        <img src="./imagenes/imagen1.png" alt="Route 1" height="200px" width="400px"><!--etiqueta para insertar imagenes desde nuestra carpeta-->
+        <img src="./imagenes/imagen2.png" alt="Route 1" height="200px" width="400px"><!--ademas importante notar que con height y width se le da el tamaño a la foto-->
+        <img src="./imagenes/imagen3.jpg" alt="Route 1" height="200px" width="400px">
+        <img src="./imagenes/imagen4.jpg" alt="Route 1" height="200px" width="400px">
+      </figure>
+    </aside> <!--cierre de la etiqueta de contenido para las imagenes-->
+    <section class="content"> <!--etiqueta para la creacion de una seccion en la que ira un parrafo, y creacion de la clase conten, haciendo referencia a contenido-->
+      <p class="description"> <!--etiqueta parrafo para poner el contenido y se crea una clase descripcion para darle estilo-->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <!--contenido del parrafo-->
+        Exercitationem debitis nulla reprehenderit culpa architecto fuga deserunt quos repellat officia ut magni quibusdam earum, aliquam, vitae dicta blanditiis excepturi! Neque, dolorum.
+      </p> 
+    </section>
+  </main> <!--cierre del main (caja grande donde esta el contenido)-->
+  <footer class="footer"> <!--creacion del footer (final del html) y creacion de la clase footer-->
+    <p>About us</p> <!--parrafo dentro del footer (contenido del footer)-->
+  </footer>
+</body>
+</html>

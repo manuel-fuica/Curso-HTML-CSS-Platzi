@@ -1,0 +1,28 @@
+.block-element {  /*aqui se esta llamando a la clase block-element*/
+    background-color: green; /*aca se le da color al contorno de lo que esta en el block-element*/
+    margin: 10px;  /* aca se le da el tamaño a los bordes del texto, recuerda el modelo de caja*/
+    padding: 20px;
+}
+.nav {
+    background-color: peachpuff;
+    padding: 20px;
+    list-style: none;  /*esta linea de codigo es para que la lista no este hacia abajo, nosotros defineremos como la queremos*/ 
+    text-align: center; /*con esto se centra las listas, en este caso quedan en el centro del archivo*/
+}
+
+.nav li {  /*aqui se llama a las listas que estan dentro de la clase nav*/
+    display: inline-block; /* con esto las listas quedaran de derecha a izquierda*/
+    font-size: 20px; 
+    margin: 10px 0;  /*luego se le dio tamaño al margin y al paddin del modelo de caja*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* resumen:
+En un elemento con display:inline no puedo usar margin ni padding arriba ni abajo,
+solo derecha e izquierda. Tampoco se puede aplicar width o height.
+En un elemento con display:block el contenido del elemento toma el 100% del width,
+se puede usar margin y padding por todos los lados.
+En un elemento con display:inline-block, se puede usar margin y padding por todos lados,
+así como darle width y height, y el contenido es del mismo tamaño que el elemento.
+Etiquetas como p y div vienen por Default con un display:block
+Etiquetas como span viene por Default con un display:inline*/
