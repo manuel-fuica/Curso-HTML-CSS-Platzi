@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container { /* este es el contenedor principal. dentro de esto estara todo lo demas*/
+    border: 0.3rem solid black;
+    display: flex;
+    justify-content: space-around; /*hace que los el espacio que sobro, se divida entre los contenedores, pero no del mismo tamaño. para que sean del mismo tamaño se utiliza space-evently*/
+    /* con esto los contenedores de abajo se posicionaran de izquierda a derecha, porque container es el padre y los demas heredan esta funcion*/
+}            /*si no, aparecerian de arriba hacia abajo*/
+.box {  /*aca se le da el tamaño a la clase box. 10 pixeles de alto y ancho*/
+    width: 10rem;
+    height: 10rem;       /*en display flex tambien se puede usar flex-direction column, esto hara que se pongan en columna hacia abajo*/
+}                     /*otra opcion tambien es row-reverse y los dispondra de tras hacia adelante pero en linea de derecha a izquierda (eso hace row)*/
+.box1 {               /*display flex viene por defecto en row (de izquierda a derecha)*/
+    background-color: blue;  /*column-reverse hace que se pongan en columna pero de atras hacia adelante*/
+}                         /*flex-wrap wrap hace que si la pantalla de achica los contenedores mantienen su tamaño pero se posicionan hacia abajo, haci no se genera scrol*/
+.box2 {
+    background-color: blueviolet;
+}
+.box3 {
+    background-color: burlywood;
+}
+.box4 {
+    background-color: cadetblue;
+}
+.box5 {
+    background-color: coral;
+}
+.box6 {
+    background-color: salmon;
+}
