@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.container { /* este es el contenedor principal. dentro de esto estara todo lo demas*/
+    border: 0.3rem solid black;
+    display: flex; /**/
+    flex-wrap: wrap; 
+ /* align-items: baseline;
+  /*height: 50vh ;  50 view hight equivale a 50%, es el tamaño del contenedor principal, en este caso utilizara la mitad de la pantalla*/
+}  
+.box {  /*aca se le da el tamaño a la clase box. 10 pixeles de alto y ancho*/
+ /* width: 10rem;   con align-items: stretch los box se estrian hacia abajo, pero debo eliminar este width y height ya que impide modificar su tamaño*/
+    height: 10rem; /*con baseline (reemplaza stretch) los box toman el tamaño de el texto, esto quiere decir que se achican*/
+    flex-basis: 10rem; /* con esto hacemos que si la pantalla se achica, los box van pasando hacia abajo, hasta crear una columna*/
+    flex-grow: 1;
+}
+.box1 {               
+    background-color: blue; 
+  /*  order: 1;   con esto le damos el orden en que queremos el box, en este caso sera el uno*/
+    flex-grow: 1; /*con esto, el box 1 y el box dos tomaran el espacio que falta para ocupar todo el main*/
+}                 /*si el se achica la pantalla tambien se achicaran esos box y tomaran el mismo tamaño de los otros*/
+.box2 {
+    background-color: blueviolet;
+  /*  order: 3; este sera en 3*/
+    flex-grow: 1;
+}
+.box3 {
+    background-color: burlywood; /*importante señalar que si hay contenedores que no tienen order, pasan a posicionarse*/
+}                                 /*a la izquierda del main, en este caso el box 3 y el 4 quedaron primero*/
+.box4 {                             /*y luego aplicara el orden que se les dio*/
+    background-color: cadetblue;
+}
+.box5 {
+    background-color: coral;
+}
+.box6 {
+    background-color: salmon;
+}

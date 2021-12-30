@@ -1,0 +1,32 @@
+:root {  /*esta es la raiz de nuestro html y es aqui donde se crean nuestras variables*/
+    --primary-color: #003476; /*aqui se crearon 4 varibales, esto se hace para no estar copiando y pegando el codigo*/
+    --secundary-color: #b4d2f7;
+    --header-size: 4rem; /*se utiliza para estandarizar por ejemplo el color de fondo el tamaño de la fuente (letras)*/
+    --font: 1.8rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; /*esto se debe hacer simepre al comienzo de un css, asi 1 rem equivaldra a 10px*/
+}
+header {
+    width: 100vw; /*para que sea el 100%*/
+    height: 15vh;
+    background-color: #003476;  /*este es el color de atras (background) si quisiera darle color a la fuente*/
+}                                   /*seria solo color, y con esto las letras se pondrian de color azul*/
+main {
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.8rem; /*esto equivale a 18 pixeles (ojo sin espacio entre el numero y la palabra rem)*/
+}
+h1 {
+    font-size: 4rem;
+}
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color); /* esta es la manera de llamar una variable creada en el root*/
+}                                                
