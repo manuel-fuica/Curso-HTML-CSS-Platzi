@@ -1,0 +1,7 @@
+/*@media (min-width: 600px) { esto se utiliza para ir dandole ciertas modificaciones a medida que crece la pantalla. desde un smartphone, a una tabla, y a una laptop*/
+    
+.c2,   /*cundo la pantalla sobrepase los 600px los contenedores c2,c3,c4 cambiaran su width a 50%*/
+.c3,
+.c4 {
+    width: 50%;
+  }

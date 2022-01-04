@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {  /*aqui se manda a llamar a la etiqueta imagen y se le da un tamaño de 350px a la imagen*/
+    width: 350px;
+}

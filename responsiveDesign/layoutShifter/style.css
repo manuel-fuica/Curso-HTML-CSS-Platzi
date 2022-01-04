@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box; /* buenas practicas para adecuar el margin y el padding*/
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;  /*buena practica para poder utilizar el rem (1 rem igual a 10 pixeles)*/
+}
+.container {   /*display flex para el contenedor prinicipal*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.c1,
+.c2,
+.c3,
+.c4,   /*se mandan a llamar las 5 clases creadas*/
+.c5 {
+    width: 100%;    /*medidas que se les da a las clases creadas*/
+    min-width: 150px;
+    height: 150px;
+}
+.c4 {
+    height: auto;
+} 
+.c1 {
+    background-color: #004376; /*color para cada una de la clase creada*/
+}
+.c2 {
+    background-color: #0062d2;
+}
+.c3 {
+    background-color: #b4d2f7;
+}
+.c4 {
+    background-color: #d5dfef;
+}
+.c5 {
+    background-color: #dfe1e5;
+}
+@media (min-width: 600px) {
+    .c1 {
+        width: 25%;
+    }
+    .c4 {
+        width: 75%;
+    }
+    .c5 {
+        width: 100%;
+    }
+}
+@media (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c1 {
+        width: 50%;
+        order: 1;
+    }
+    .c4 {
+        width: 100%;
+    }
+    .c5 {
+        width: 50%;
+        order: 2;
+    }
+}
